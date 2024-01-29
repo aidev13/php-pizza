@@ -1,0 +1,15 @@
+
+:root {
+   --main-theme: rgb(255, 149, 0); 
+}
+
+.brand {
+   background-color: var(--main-theme) !important;
+   /* color: rgb(255, 255, 255); */
+   border-radius: 8px;
+   font-weight: 600;
+}
+
+.brand-text {
+   color:  var(--main-theme) !important;
+}
