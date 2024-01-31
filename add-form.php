@@ -1,12 +1,4 @@
-<?php
-
-   if(isset($_GET['submit'])){
-      echo $_GET['email'];
-      echo $_GET['title'];
-      echo $_GET['ingredients'];
-   };
-
-?>
+<?php include('validation.php') ?>
 
 <!DOCTYPE html>
 
@@ -14,9 +6,9 @@
 
 <?php include('templates/header.php'); ?>
 
-<section class="container grey-text">
+<section class="container orange-text">
    <h4 class="center">Add Pizza</h4>
-   <form class="white" action="add-form.php" method="GET">
+   <form class="white" action="add-form.php" method="POST">
       <label>Your Email</label>
       <input type="text" name="email">
       <label>Pizza Title</label>
