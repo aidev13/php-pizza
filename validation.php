@@ -7,14 +7,20 @@ if (isset($_POST['submit'])) {
    if (empty($_POST['email'])) {
       echo 'Error - Email Needed <br />';
    } else {
-      echo htmlspecialchars($_POST['email']);
+      $email = $_POST['email'];
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+         echo 'Error - provide a valide email address';
+      }
+
    }
+
    // check title
    if (empty($_POST['title'])) {
       echo 'Error - Title Needed <br />';
    } else {
       echo htmlspecialchars($_POST['title']);
    }
+
    // check ingredients
    if (empty($_POST['ingredients'])) {
       echo 'Error - Ingredients Needed <br />';
