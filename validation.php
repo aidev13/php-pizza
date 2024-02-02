@@ -53,4 +53,10 @@ if (isset($_POST['submit'])) {
          $errors['ingredients'] = 'Error - Please seperate your ingredients with a comma';
       }
    }
+
+   if(array_filter($errors)) {
+    // do nothing LOL
+   } else {
+      header('Location: index.php');
+   }
 };
