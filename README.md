@@ -3,7 +3,7 @@ PHP means Pre-HTML Processor || PHP: Hypertext Preprocessor || Personal Home Pag
 
 ## Techs:
 * PHP
-* Laragon
+* XAMPP
 * SQL
 * HTML
 * Materilize CSS Framework
