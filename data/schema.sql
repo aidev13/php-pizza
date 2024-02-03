@@ -5,6 +5,14 @@
 
 -- You can see the databases in the CLI by running 'SHOW DATABASES;' in the CLI.
 
+-- To see the tables, use ths command SHOW TABLES;
+-- Schema means STRUCTURE.
+
+-- To see the schema (or structure) of a table, use DESCRIBE table_name;
+-- CRUD, Create = INSERT INTO() VALUE() | Read = SELECT * FROM table_name;
+-- Update = 
+
+
 DROP DATABASE IF EXISTS php_pizza;
 CREATE DATABASE php_pizza;
 
@@ -19,4 +27,8 @@ CREATE TABLE pizzas(
    PRIMARY KEY (id)
 );
 
+INSERT INTO pizzas (title, ingredients, email, created_at)
+VALUES ('Deluxe', 'Cheese, Sausage, Green Peppers, Onions', 'myemail@email.com', CURRENT_TIMESTAMP);
 
+INSERT INTO pizzas (title, ingredients, email, created_at)
+VALUES ('Just Cheese', 'Cheese', 'myemail2@email.com', CURRENT_TIMESTAMP);
