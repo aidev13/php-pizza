@@ -32,3 +32,6 @@ VALUES ('Deluxe', 'Cheese, Sausage, Green Peppers, Onions', 'myemail@email.com',
 
 INSERT INTO pizzas (title, ingredients, email, created_at)
 VALUES ('Just Cheese', 'Cheese', 'myemail2@email.com', CURRENT_TIMESTAMP);
+
+INSERT INTO pizzas (title, ingredients, email, created_at)
+VALUES ('Daddy Chill', 'Sausage, Pepperoni, Ham, Bacon, Pine Apples', 'myemail3@email.com', CURRENT_TIMESTAMP);
