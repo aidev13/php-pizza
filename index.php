@@ -1,3 +1,10 @@
+
+<!-- I am a huge believer in Trongates theory of Modules (HAVC). 
+https://trongate.io/docs/information/introducing-modular-havc
+
+As I learn and grow, I will be practicing this theory.
+-->
+
 <?php
 // MySQLi or POD
 
@@ -21,7 +28,10 @@ mysqli_free_result($result);
 // closing the query connection
 mysqli_close($connection);
 
-// print_r($pizzas);
+// https://www.w3schools.com/php/func_string_explode.asp
+// print_r(explode(',', $pizzas[2]['ingredients']))
+
+
 ?>
 
 <!DOCTYPE html>
