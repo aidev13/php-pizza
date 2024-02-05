@@ -6,14 +6,9 @@ As I learn and grow, I will be practicing this theory.
 -->
 
 <?php
-// MySQLi or POD
+// made a config file to modulize the connection
+require_once('./config/connect.php');
 
-$connection = mysqli_connect('localhost', 'root', '', 'php_pizza');
-
-// checking the connection
-if (!$connection) {
-  echo 'Connection Error: ' . mysqli_connect_error();
-}
 // write query for all pizzas
 $sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
 // make query and get results

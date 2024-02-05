@@ -1,13 +1,16 @@
-<?php include('validation.php') ?>
+<?php 
+include('validation.php');
+?>
 
 <!DOCTYPE html>
- 
+
 <html lang="en">
 
 <?php include('templates/header.php'); ?>
 
 <!-- Comments and Notes:
-htmlspecialchars(); this function turns any text into html text and keeps morons from inserting harmful code into the program
+htmlspecialchars(); this function turns any text into html text and keeps morons from inserting harmful code into the program.
+https://www.w3schools.com/php/func_string_htmlspecialchars.asp
 
 values have been added to the inputs via PHP to keep the users inputs in the form with being deleted after hitting submit.
 

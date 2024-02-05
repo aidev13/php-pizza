@@ -1,5 +1,6 @@
 <?php
 
+include('./config/connect.php');
 
 /* The errors var_ array is to create an array of key-value pairs known as an associated array. basically we are setting the values of each key to an empty string to aviod errors and if there is an error it will display in the php in he html. 
 
@@ -57,6 +58,19 @@ if (isset($_POST['submit'])) {
    if(array_filter($errors)) {
     // do nothing LOL
    } else {
-      header('Location: index.php');
-   }
+      $email = mysqli_real_escape_string($connection, $_POST['email']);
+      $title = mysqli_real_escape_string($connection, $_POST['title']);
+      $ingredients = mysqli_real_escape_string($connection, $_POST['ingredients']);
+
+      // create sql
+      $sql = "INSERT INTO pizzas(title, email, ingredients) VALUES ('$title', '$email', '$ingredients')";
+
+      // saving the data to the database
+      if(mysqli_query($connection, $sql)){
+         //success
+         header('Location: index.php');
+      } else {
+         echo "Query Error: " . mysqli_error($connection);
+      }
+   };
 };
