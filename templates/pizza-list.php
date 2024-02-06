@@ -3,7 +3,7 @@
   <div class="row">
 
     <?php foreach ($pizzas as $pizza): ?>
-      <div class="col s6 md3">
+      <div class="col s4 md6">
         <div class="card z-depth-0">
           <div class="card-content center ">
             <h5 class="orange-text"><?php echo htmlspecialchars($pizza['title']); ?></h5>
@@ -17,7 +17,7 @@
                 </ul>
               </i></p>
             <div class="card-action right-align">
-              <a href="#" class="brand-text">More Info</a>
+              <a href="details.php?id=<?php echo $pizza['id']; ?>" class="brand-text">More Info</a>
             </div>
           </div>
         </div>
