@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
       $errors['title'] = 'Error - Title Needed <br />';
    } else {
       $title = $_POST['title'];
-      if (!preg_match('/^[a-zA-Z\s]+$/', $title)) {
+      if (!preg_match("/^[a-zA-Z\s']+$/", $title)) {
          $errors['title'] = 'Error - Please enter a proper title';
       }
    }
