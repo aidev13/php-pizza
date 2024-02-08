@@ -5,6 +5,7 @@
     <?php foreach ($pizzas as $pizza): ?>
       <div class="col s4 md6">
         <div class="card z-depth-0">
+         <img src="img/pizza-bg.svg" class="pizza-slice">
           <div class="card-content center ">
             <h5 class="orange-text"><?php echo htmlspecialchars($pizza['title']); ?></h5>
             <p><i>
